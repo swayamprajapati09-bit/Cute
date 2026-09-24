@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Betu 💕 | Srushti</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-gradient"></div>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+  <div class="particles" id="particles"></div>
+
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-glow"></div>
+      <div class="sidebar-header">
+        <div class="avatar-wrap">
+          <div class="avatar">🌸</div>
+          <div class="avatar-ring"></div>
+        </div>
+        <h2 class="name-title">Srushti</h2>
+        <p class="nickname">my Betu ❤️</p>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn active" data-section="home">
+          <span class="icon">🏠</span>
+          <span class="label">Home</span>
+        </button>
+        <button class="nav-btn" data-section="notes">
+          <span class="icon">💌</span>
+          <span class="label">Love Notes</span>
+        </button>
+        <button class="nav-btn" data-section="tasks">
+          <span class="icon">✨</span>
+          <span class="label">Cute Tasks</span>
+        </button>
+        <button class="nav-btn" data-section="quiz">
+          <span class="icon">🥰</span>
+          <span class="label">Us Quiz</span>
+        </button>
+        <button class="nav-btn" data-section="gifts">
+          <span class="icon">🎁</span>
+          <span class="label">Virtual Gifts</span>
+        </button>
+        <button class="nav-btn" data-section="memories">
+          <span class="icon">📸</span>
+          <span class="label">Memories</span>
+        </button>
+        <button class="nav-btn" data-section="hugs">
+          <span class="icon">🤗</span>
+          <span class="label">Send a Hug</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="footer-hearts">💗 ✨ 💗</div>
+        <p>Made with endless love<br>for my Betu</p>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <!-- HOME -->
+      <section id="home" class="section active">
+        <div class="hero">
+          <div class="hero-badge">For you, always</div>
+          <h1 class="hero-title">
+            <span class="line">Hello,</span>
+            <span class="line highlight">my Betu</span>
+          </h1>
+          <p class="hero-subtitle">This little world was made just for you, Srushti.</p>
+          <div class="hero-card glass">
+            <p>Every time you open this, I hope it feels like a soft hug.</p>
+            <p>Pick anything from the side — notes, tasks, gifts, or just a hug.</p>
+            <p class="hero-sign">— with all my love ❤️</p>
+          </div>
+          <button class="cta-btn" onclick="goTo('tasks')">
+            <span>Start a Cute Task</span>
+            <span class="cta-arrow">→</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- LOVE NOTES -->
+      <section id="notes" class="section">
+        <div class="section-header">
+          <h2 class="section-title">💌 Love Notes</h2>
+          <p class="section-desc">For my Betu — open one whenever your heart needs it.</p>
+        </div>
+        <div class="notes-grid">
+          <div class="note-card" onclick="openNote(this)">
+            <div class="note-inner">
+              <div class="note-front">
+                <span class="note-emoji">💕</span>
+                <span>Click me</span>
+              </div>
+              <div class="note-back">
+                Srushti, you make ordinary days feel like little celebrations.
+              </div>
+            </div>
+          </div>
+          <div class="note-card" onclick="openNote(this)">
+            <div class="note-inner">
+              <div class="note-front">
+                <span class="note-emoji">🌸</span>
+                <span>Open</span>
+              </div>
+              <div class="note-back">
+                I’m so proud of how soft and strong you are at the same time, Betu.
+              </div>
+            </div>
+          </div>
+          <div class="note-card" onclick="openNote(this)">
+            <div class="note-inner">
+              <div class="note-front">
+                <span class="note-emoji">💌</span>
+                <span>Secret</span>
+              </div>
+              <div class="note-back">
+                Your laugh is still my favourite sound in the whole world.
+              </div>
+            </div>
+          </div>
+          <div class="note-card" onclick="openNote(this)">
+            <div class="note-inner">
+              <div class="note-front">
+                <span class="note-emoji">✨</span>
+                <span>For you</span>
+              </div>
+              <div class="note-back">
+                Even on hard days, you are enough. Exactly as you are, my Betu.
+              </div>
+            </div>
+          </div>
+          <div class="note-card" onclick="openNote(this)">
+            <div class="note-inner">
+              <div class="note-front">
+                <span class="note-emoji">💗</span>
+                <span>Read me</span>
+              </div>
+              <div class="note-back">
+                I fall for you a little more every single day. No rush, just love.
+              </div>
+            </div>
+          </div>
+          <div class="note-card" onclick="openNote(this)">
+            <div class="note-inner">
+              <div class="note-front">
+                <span class="note-emoji">🌙</span>
+                <span>Surprise</span>
+              </div>
+              <div class="note-back">
+                Thank you for existing, Srushti. The world is softer because of you.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CUTE TASKS -->
+      <section id="tasks" class="section">
+        <div class="section-header">
+          <h2 class="section-title">✨ Cute Tasks</h2>
+          <p class="section-desc">Little missions for my Betu to make the day brighter.</p>
+        </div>
+        <div class="tasks-list" id="tasksList"></div>
+        <button class="cta-btn secondary" onclick="resetTasks()">
+          <span>Reset all tasks</span>
+        </button>
+      </section>
+
+      <!-- QUIZ -->
+      <section id="quiz" class="section">
+        <div class="section-header">
+          <h2 class="section-title">🥰 How Well Do We Know Us?</h2>
+          <p class="section-desc">A tiny quiz just for fun — answers are always perfect with you, Betu.</p>
+        </div>
+        <div class="quiz-container glass">
+          <div class="quiz-progress">
+            <div class="quiz-bar" id="quizBar"></div>
+          </div>
+          <div id="quizContent"></div>
+        </div>
+      </section>
+
+      <!-- GIFTS -->
+      <section id="gifts" class="section">
+        <div class="section-header">
+          <h2 class="section-title">🎁 Virtual Gifts</h2>
+          <p class="section-desc">Unwrap something sweet, just for you Srushti.</p>
+        </div>
+        <div class="gifts-grid">
+          <div class="gift-box" onclick="openGift(this, '💐', 'A virtual bouquet of your favourite flowers')">
+            <div class="gift-shine"></div>
+            <div class="gift-lid">🎀</div>
+            <div class="gift-content">?</div>
+          </div>
+          <div class="gift-box" onclick="openGift(this, '🧸', 'A soft virtual hug + teddy for my Betu')">
+            <div class="gift-shine"></div>
+            <div class="gift-lid">🎀</div>
+            <div class="gift-content">?</div>
+          </div>
+          <div class="gift-box" onclick="openGift(this, '🍪', 'Warm cookies & your favourite drink')">
+            <div class="gift-shine"></div>
+            <div class="gift-lid">🎀</div>
+            <div class="gift-content">?</div>
+          </div>
+          <div class="gift-box" onclick="openGift(this, '⭐', 'A wish upon a star just for Srushti')">
+            <div class="gift-shine"></div>
+            <div class="gift-lid">🎀</div>
+            <div class="gift-content">?</div>
+          </div>
+          <div class="gift-box" onclick="openGift(this, '💌', 'A handwritten letter (coming soon irl)')">
+            <div class="gift-shine"></div>
+            <div class="gift-lid">🎀</div>
+            <div class="gift-content">?</div>
+          </div>
+          <div class="gift-box" onclick="openGift(this, '🌈', 'A pocketful of sunshine for my Betu')">
+            <div class="gift-shine"></div>
+            <div class="gift-lid">🎀</div>
+            <div class="gift-content">?</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEMORIES -->
+      <section id="memories" class="section">
+        <div class="section-header">
+          <h2 class="section-title">📸 Little Memories</h2>
+          <p class="section-desc">Moments that feel softer because of you, Srushti.</p>
+        </div>
+        <div class="memories-grid">
+          <div class="memory-card glass">
+            <div class="memory-emoji">☕</div>
+            <h3>Our first coffee</h3>
+            <p>The day everything started feeling a little more magical.</p>
+          </div>
+          <div class="memory-card glass">
+            <div class="memory-emoji">🌙</div>
+            <h3>Late night talks</h3>
+            <p>When time disappeared and we just… existed together.</p>
+          </div>
+          <div class="memory-card glass">
+            <div class="memory-emoji">🌧️</div>
+            <h3>Rainy day</h3>
+            <p>You made the grey weather feel warm, Betu.</p>
+          </div>
+          <div class="memory-card glass">
+            <div class="memory-emoji">🎬</div>
+            <h3>Movie nights</h3>
+            <p>Snuggled up, half watching the screen, half watching you.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HUGS -->
+      <section id="hugs" class="section">
+        <div class="section-header">
+          <h2 class="section-title">🤗 Send Yourself a Hug</h2>
+          <p class="section-desc">Sometimes my Betu just needs one. Click as many times as you want.</p>
+        </div>
+        <div class="hug-area">
+          <button class="hug-btn" id="hugBtn" onclick="sendHug()">
+            <div class="hug-ripple"></div>
+            <span class="hug-emoji">🤗</span>
+            <span class="hug-label">Give me a hug</span>
+          </button>
+          <div class="hug-count">Hugs received: <span id="hugCount">0</span></div>
+          <div class="hug-message" id="hugMessage"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
